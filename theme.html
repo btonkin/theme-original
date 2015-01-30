@@ -74,6 +74,12 @@
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                   <li><a href="/">Blog</a></li>
+                  <!-- Categories -->
+    <li><a href="/tag/photos" class="{{ set_active('/tag/photos') }}">Photo's</a></li>
+    <li><a href="/tag/videos" class="{{ set_active('/tag/videos') }}">Video's</a></li>
+    <li><a href="/tag/food" class="{{ set_active('/tag/food') }}">Food</a></li>
+    <li><a href="/tag/misc" class="{{ set_active('/tag/misc') }}">Misc</a></li>
+    <!-- END Categories -->
                   {% if pages %}
                   {% for page in pages %}
                   <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
